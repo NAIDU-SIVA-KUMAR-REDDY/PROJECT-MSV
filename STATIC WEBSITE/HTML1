@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>Text Animation</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			font-family: sans-serif;
+		}
+
+		body {
+			light blue;
+		}
+
+		.container {
+			text-align: center;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100%;
+		}
+
+		.container span {
+			display: block;
+		}
+
+		.text1 {
+			color: white;
+			font-size: 70px;
+			font-weight: 700;
+			letter-spacing: 8px;
+			margin-bottom: 20px;
+			background: yellowgreen;
+			position: relative;
+			animation: text 3s 1;
+		}
+
+		.text2 {
+			font-size: 30px;
+			color: darkgreen;
+			font-family: Georgia, serif;
+		}
+
+		@keyframes text {
+			0% {
+				color: black;
+				margin-bottom: -40px;
+			}
+
+			30% {
+				letter-spacing: 25px;
+				margin-bottom: -40px;
+			}
+
+			85% {
+				letter-spacing: 8px;
+				margin-bottom: -40px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<span class="text1">Mission of the project
+</span>
+			<span class="text2">This PROJECT deals with the study and development of village as a smart village. The smart villages can achieve various successes for making livelihood better. Villages can be able to develop to support value added services for various attributes to the village and for the people. SMART VILLAGE is a concept adopted by national and state government of INDIA. It is an initiative and it is being a broad and complex task for holistic rural development. 
+</span>
+		</div>
+	</div>
+</body>
+
+</html>
